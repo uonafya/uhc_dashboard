@@ -11,7 +11,7 @@ const navItem = {
 
 const Header = () => (
 
-  <nav className="navbar is-link is-fixed-top bcprimary-dark p-t-10 p-b-5">
+  <nav className="navbar is-link is-fixed-top bcsecondary-dark p-t-10 p-b-5">
     <div className="container is-fluid">
         <div className="navbar-brand bcdark text-bold is-1 p-0">
           <Link href="/">
@@ -30,24 +30,12 @@ const Header = () => (
           <div className="navbar-end">
               <div class="navbar-item">
                 <div class="field is-grouped">
-                  <p class="control">
-                    <Link href='/'><a className="m-r-5 button is-primary"><strong>Service Delivery</strong></a></Link>
-                  </p>
-                  <p class="control">
-                      <Link href='#'><a className="m-r-5 button is-primary"><strong>Health Statistics</strong></a></Link>
-                  </p>
-                  <p class="control">
-                      <Link href='#'><a className="m-r-5 button is-primary"><strong>Commodities</strong></a></Link>
-                  </p>
-                  <p class="control">
-                      <Link href='#'><a className="m-r-5 button is-primary"><strong>Human Resource</strong></a></Link>
-                  </p>
-                  <p class="control">
-                      <Link href='#'><a className="m-r-5 button is-primary"><strong>Community Access</strong></a></Link>
-                  </p>
-                  <p class="control">
-                      <Link href='/uhc'><a className="m-r-5 button is-primary"><strong>Result Framework</strong></a></Link>
-                  </p>
+                    <Link href='/'><a className="m-r-5 button is-secondary is-dark"><strong>Service Delivery</strong></a></Link>
+                    <Link href='#'><a className="m-r-5 button is-secondary is-dark"><strong>Health Statistics</strong></a></Link>
+                    <Link href='#'><a className="m-r-5 button is-secondary is-dark"><strong>Commodities</strong></a></Link>
+                    <Link href='#'><a className="m-r-5 button is-secondary is-dark"><strong>Human Resource</strong></a></Link>
+                    <Link href='#'><a className="m-r-5 button is-secondary is-dark"><strong>Community Access</strong></a></Link>
+                    <Link href='/uhc'><a className="m-r-5 button is-secondary is-dark"><strong>Result Framework</strong></a></Link>
                 </div>
               </div>
           </div>
