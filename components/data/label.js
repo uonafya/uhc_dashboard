@@ -7,15 +7,11 @@ const DataLabel = (props) => {
           <div className="columns">
             <div className="column  ">
               {props.name}
-              
             </div>
           </div>
           <div className="columns">
-            <div className="column is-one-third ">
-              <i className="fa fa-heart-o fa-2x" aria-hidden="true"></i>
-            </div>
             <div className="column">
-              <i className="fcprimary">{props.value}</i>
+              <h2 className="fcsecondary">{props.value}</h2>
             </div>
           </div>
         </div>

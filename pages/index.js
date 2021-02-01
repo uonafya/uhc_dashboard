@@ -22,13 +22,13 @@ const Home = withRouter(props => (
 
       <section className="section">
          {/* Data labels */}
-        <div className="container is-fluid p-5 m-b-10">
+        <div className="container is-centered p-5 m-b-10">
 
-         <DataLabel name={"Life expectancy at birth"} value={63}></DataLabel>
-         <DataLabel name={"Healthy Life Expectancy"} value={58.9}></DataLabel>
-         <DataLabel name={"Number of AIDS related Deaths"} value={28200}></DataLabel>
-         <DataLabel name={"NCDs Mortality Rate"} value={55}></DataLabel>
-         <DataLabel name={"Cancer mortality Rate (adult)"} value={3}></DataLabel>
+          <DataLabel name={"Life expectancy at birth"} value={63}></DataLabel>
+          <DataLabel name={"Healthy Life Expectancy"} value={58.9}></DataLabel>
+          <DataLabel name={"Number of AIDS related Deaths"} value={28200}></DataLabel>
+          <DataLabel name={"NCDs Mortality Rate"} value={55}></DataLabel>
+          <DataLabel name={"Cancer mortality Rate (adult)"} value={3}></DataLabel>
 
         </div>
 
