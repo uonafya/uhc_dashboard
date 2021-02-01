@@ -51,10 +51,10 @@ const Footer = () => (
                 <li><a href="#">Privacy policy</a></li>
               </ul>
               <p>
-                MOH DAP is an open-source project for <a href="#">MoH HIS</a> Kenya. It is managed &amp; maintained by <a href="#">HealthIT</a>, a USAID-funded project at the <a href="#">UoN</a> that manages information systems in Kenya.
+                UHC Portal is an open-source project for <a href="#">MoH M&E</a> Kenya. It is managed &amp; maintained by <a href="#">HealthIT</a>, a USAID-funded project at the <a href="#">UoN</a> that manages information systems in Kenya.
               </p>
               <p>
-                MOH DAP is available under a BSD license.
+                UHC Portal is available under a BSD license.
               </p>
 
             </div>
@@ -63,7 +63,7 @@ const Footer = () => (
       <div className="columns text-center">
         <div className="column">
           &mdash; <br />
-          MOH DAP  &copy; HIS Kenya, {new Date().getFullYear() }
+          UHC Portal  &copy; HIS Kenya, {new Date().getFullYear() }
         </div>
       </div>
     </div>

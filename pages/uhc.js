@@ -48,9 +48,9 @@ export default function UHC() {
   return (
   <div>
     <Layout>
-      <section className="section m-t-5 p-t-10">
+      <section className="section m-t-10 p-t-10">
         {/* <!-- Title --> */}
-        <div className="section-heading m-b-5">
+        <div className="section-heading m-b-5 p-t-40">
           <div className="container">
             <h3 className="title text-center fcsecondary-dark text-bold">Universal Health Coverage</h3>
             <hr className="m-t-10 m-b-10"/>
