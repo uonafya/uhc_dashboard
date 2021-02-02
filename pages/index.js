@@ -13,16 +13,19 @@ import Router from 'next/router'
 import Layout from '../components/Layout'
 
 import DataLabel from '../components/data/label'
-import Years from  '../components/data/years_list'
-import Months from  '../components/data/months_list'
+import Years from '../components/data/years_list'
+import Months from '../components/data/months_list'
 import OrgUnitNestedMenu from '../components/utils/OrgUnitNestedMenu'
 import GenericYearDropDown from '../components/utils/GenericYearDropDown'
 import { useState } from 'react'
 
+
 const Page = (props) => {
 
-  const [orgUnit, setOrgUnit] = useState(0);
+  const [orgUnit, setOrgUnit] = useState(18);
+  const [period, setPeriod] = useState(2019);
   const [orgFilterId, setOrgFilterId] = useState(20);
+
 
   let handleOrgUnitChange = (orgUnitId) => {
     console.log("setting org unit");
@@ -35,18 +38,18 @@ const Page = (props) => {
         {/* Data labels */}
         <div className="container is-fluid">
           <div style={{ display: "inline-block" }}>
-            <OrgUnitNestedMenu name={"Region"} level={['1', '2', '3','4']} callBackHandler={handleOrgUnitChange} elId={`${orgFilterId} indicatorChart`} />
+            <OrgUnitNestedMenu name={"Region"} level={['1', '2', '3', '4']} callBackHandler={handleOrgUnitChange} elId={`${orgFilterId} indicatorChart`} />
           </div>
-          <div className="p-l-5" style={{ display: "inline-block", marginLeft: "2px", verticalAlign: "bottom", fontSize:"16px" }}>
+          <div className="p-l-5" style={{ display: "inline-block", marginLeft: "2px", verticalAlign: "bottom", fontSize: "16px" }}>
             {/* <GenericYearDropDown handleChangePeriod={handleOrgUnitChange} /> */}
-            Year: <Years/><br/>
-            Month: <Months/>
+            Year: <Years /><br />
+            Month: <Months />
           </div>
 
         </div>
 
         <div className="container is-centered p-5 m-b-10">
-          <hr/>
+          <hr />
           <DataLabel name={"Life expectancy at birth"} value={63}></DataLabel>
           <DataLabel name={"Healthy Life Expectancy"} value={58.9}></DataLabel>
           <DataLabel name={"Number of AIDS related Deaths"} value={28200}></DataLabel>
@@ -58,13 +61,31 @@ const Page = (props) => {
         <div className="container is-fluid">
           <h4 className="title is-5 text-center text-uppercase fcsecondary-dark text-bold">Overview</h4>
           <div className="columns has-same-height is-gapless">
-            <UhcIndicators />
-            <UhcIndicators />
+            {/* <UhcIndicators /> */}
+
+            <div class="column ">
+                <IndicatorLineGraph id={61829} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+            </div>
+            <div class="column ">
+                <IndicatorLineGraph id={10748234} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+            </div>
+            
+          </div>
+
+          <div className="columns has-same-height is-gapless">
+            {/* <UhcIndicators /> */}
+
+            <div class="column ">
+                <IndicatorLineGraph id={10748503} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+            </div>
+            <div class="column ">
+                <IndicatorLineGraph id={10699276} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+            </div>
+            
           </div>
 
           <div className="columns has-same-height is-gapless">
             <LandingCadrePieChart />
-            <UhcIndicators />
           </div>
         </div>
       </section>
