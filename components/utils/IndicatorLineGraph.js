@@ -166,7 +166,7 @@ export default class IndicatorLineGraph extends PureComponent {
   render(){
     const { chartOptions } = this.state;
 
-    let graphTyep=<div style={{display: "inline-block", float: "right"}}>
+    let graphTyep=<div style={{display: "inline-block", float: "right", margin:"5px"}}>
 
                       <button className="button is-small is-white" data_type onClick = {(e)=>this.changeChartType('line',e)}><i className="fas fa-chart-line"></i> &nbsp; Line</button>
                       &nbsp;
@@ -182,10 +182,11 @@ export default class IndicatorLineGraph extends PureComponent {
         return <div className="column ">
             <div>
               <div style={{display: "inline-block"}}>
-                <GenericYearDropDown handleChangePeriod={this.handleChangePeriod}/>
+                {this.props.removePeriodFilter ? <></>: <GenericYearDropDown handleChangePeriod={this.handleChangePeriod}/>}
               </div>
               <div style={{display: "inline-block", marginLeft: "2px"}}>
-                <OrgUnitNestedMenu name={this.props.label} level={['1','2','3']} callBackHandler={this.handleOrgUnitChange} elId={`${this.state.ouid} indicatorChart`}/>
+               {this.props.removeOrgFilter ? <></>: <OrgUnitNestedMenu name={this.props.label} level={['1','2','3']} callBackHandler={this.handleOrgUnitChange} elId={`${this.state.ouid} indicatorChart`}/>}
+
               </div>
               {graphTyep}
             </div>

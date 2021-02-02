@@ -11,7 +11,7 @@ const DataLabel = (props) => {
           </div>
           <div className="columns">
             <div className="column">
-              <h2 className="fcsecondary">{props.value}</h2>
+              <h2 className="fcprimary">{props.value}</h2>
             </div>
           </div>
         </div>
