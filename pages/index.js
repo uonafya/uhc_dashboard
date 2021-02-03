@@ -19,6 +19,9 @@ import OrgUnitNestedMenu from '../components/utils/OrgUnitNestedMenu'
 import GenericYearDropDown from '../components/utils/GenericYearDropDown'
 import { useState } from 'react'
 import { ChartType } from '../components/utils/charts/ChartTypes'
+import CountyDropDown from '../components/utils/CountyDropDown'
+import Counties from '../components/utils/CountiesDropDown'
+import SubCounties from '../components/utils/SubCountiesDropDown'
 
 
 const Page = (props) => {
@@ -39,7 +42,10 @@ const Page = (props) => {
         {/* Data labels */}
         <div className="container">
           <div style={{ display: "inline-block" }}>
-            <OrgUnitNestedMenu name={"County"} level={['1', '2', '3', '4']} callBackHandler={handleOrgUnitChange} elId={`${orgFilterId} indicatorChart`} />
+            <Counties></Counties>
+          </div>
+          <div style={{ display: "inline-block" }}>
+            <SubCounties></SubCounties>
           </div>
           <div className="p-l-5" style={{ display: "inline-block", marginLeft: "2px", verticalAlign: "bottom", fontSize: "16px" }}>
             {/* <GenericYearDropDown handleChangePeriod={handleOrgUnitChange} /> */}
