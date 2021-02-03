@@ -18,6 +18,7 @@ import Months from '../components/data/months_list'
 import OrgUnitNestedMenu from '../components/utils/OrgUnitNestedMenu'
 import GenericYearDropDown from '../components/utils/GenericYearDropDown'
 import { useState } from 'react'
+import { ChartType } from '../components/utils/charts/ChartTypes'
 
 
 const Page = (props) => {
@@ -36,7 +37,7 @@ const Page = (props) => {
     <Layout>
       <section className="section">
         {/* Data labels */}
-        <div className="container is-fluid">
+        <div className="container">
           <div style={{ display: "inline-block" }}>
             <OrgUnitNestedMenu name={"County"} level={['1', '2', '3', '4']} callBackHandler={handleOrgUnitChange} elId={`${orgFilterId} indicatorChart`} />
           </div>
@@ -64,7 +65,7 @@ const Page = (props) => {
             {/* <UhcIndicators /> */}
 
             <div class="column ">
-                <IndicatorLineGraph id={61829} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+                <IndicatorLineGraph id={61829} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} chartType={ChartType.column}/>
             </div>
             <div class="column ">
                 <IndicatorLineGraph id={10748234} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
@@ -79,7 +80,7 @@ const Page = (props) => {
                 <IndicatorLineGraph id={10748503} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
             </div>
             <div class="column ">
-                <IndicatorLineGraph id={10699276} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+                <IndicatorLineGraph id={10699276} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} chartType={ChartType.column}/>
             </div>
             
           </div>

@@ -132,6 +132,9 @@ export default class IndicatorLineGraph extends PureComponent {
 
   componentDidMount() {
     this.fetchAndUpdateData(this.props.id,this.props.ouid,this.props.pe,this.props.level);
+    if(this.props.chartType){
+      this.changeChartType(this.props.chartType,null);
+    }
   }
 
   componentWillReceiveProps(nextProps){
