@@ -38,7 +38,7 @@ const Page = (props) => {
         {/* Data labels */}
         <div className="container is-fluid">
           <div style={{ display: "inline-block" }}>
-            <OrgUnitNestedMenu name={"Region"} level={['1', '2', '3', '4']} callBackHandler={handleOrgUnitChange} elId={`${orgFilterId} indicatorChart`} />
+            <OrgUnitNestedMenu name={"County"} level={['1', '2', '3', '4']} callBackHandler={handleOrgUnitChange} elId={`${orgFilterId} indicatorChart`} />
           </div>
           <div className="p-l-5" style={{ display: "inline-block", marginLeft: "2px", verticalAlign: "bottom", fontSize: "16px" }}>
             {/* <GenericYearDropDown handleChangePeriod={handleOrgUnitChange} /> */}
@@ -50,12 +50,12 @@ const Page = (props) => {
 
         <div className="container is-centered p-5 m-b-10">
           <hr />
+          <DataLabel name={"Adolescent birth rate"} value={16}></DataLabel>
           <DataLabel name={"Life expectancy at birth"} value={63}></DataLabel>
           <DataLabel name={"Healthy Life Expectancy"} value={58.9}></DataLabel>
-          <DataLabel name={"Number of AIDS related Deaths"} value={28200}></DataLabel>
           <DataLabel name={"NCDs Mortality Rate"} value={55}></DataLabel>
-          <DataLabel name={"Cancer mortality Rate (adult)"} value={3}></DataLabel>
-
+          <DataLabel name={"TB Mortality rate"} value={38}></DataLabel>
+          
         </div>
 
         <div className="container is-fluid">
