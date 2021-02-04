@@ -28,7 +28,7 @@ import YearsDropDown from '../components/data/year_dropdown'
 const Page = (props) => {
 
   const [orgUnit, setOrgUnit] = useState(18);
-  const [period, setPeriod] = useState(2019);
+  const [period, setPeriod] = useState(2020);
   const [parentOrgId, setParentOrgId] = useState(null);
 
   let handleCountyUnitChange = (orgUnitId) => {

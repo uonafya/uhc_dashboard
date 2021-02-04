@@ -28,7 +28,7 @@ import YearsDropDown from '../components/data/year_dropdown'
 const Page = (props) => {
 
   const [orgUnit, setOrgUnit] = useState(18);
-  const [period, setPeriod] = useState(2019);
+  const [period, setPeriod] = useState(2020);
   const [parentOrgId, setParentOrgId] = useState(null);
 
   let handleCountyUnitChange = (orgUnitId) => {
@@ -69,10 +69,10 @@ const Page = (props) => {
             {/* <UhcIndicators /> */}
 
             <div class="column ">
-                <IndicatorLineGraph id={61829} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} chartType={ChartType.column}/>
+                <IndicatorLineGraph id={96871} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
             </div>
             <div class="column ">
-                <IndicatorLineGraph id={10748234} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+                <IndicatorLineGraph id={31584} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} chartType={ChartType.column}/>
             </div>
             
           </div>
@@ -81,16 +81,12 @@ const Page = (props) => {
             {/* <UhcIndicators /> */}
 
             <div class="column ">
-                <IndicatorLineGraph id={10748503} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+                <IndicatorLineGraph id={85000} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
             </div>
             <div class="column ">
-                <IndicatorLineGraph id={10699276} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} chartType={ChartType.column}/>
+                <IndicatorLineGraph id={342134} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} chartType={ChartType.column}/>
             </div>
             
-          </div>
-
-          <div className="columns has-same-height is-gapless">
-            <LandingCadrePieChart />
           </div>
         </div>
       </section>
