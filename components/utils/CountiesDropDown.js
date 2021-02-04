@@ -14,7 +14,6 @@ export default class Counties extends React.Component {
       ouid: 18,
       countyList: []
     };
-
   }
 
   componentDidMount(){

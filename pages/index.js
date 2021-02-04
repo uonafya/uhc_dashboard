@@ -22,6 +22,7 @@ import { ChartType } from '../components/utils/charts/ChartTypes'
 import CountyDropDown from '../components/utils/CountyDropDown'
 import Counties from '../components/utils/CountiesDropDown'
 import SubCounties from '../components/utils/SubCountiesDropDown'
+import YearsDropDown from '../components/data/year_dropdown'
 
 
 const Page = (props) => {
@@ -41,18 +42,16 @@ const Page = (props) => {
       <section className="section">
         {/* Data labels */}
         <div className="container">
-          <div style={{ display: "inline-block" }}>
+          <div style={{ display: "inline-block" }} className="m-r-5">
             <Counties></Counties>
           </div>
           <div style={{ display: "inline-block" }}>
             <SubCounties></SubCounties>
           </div>
-          <div className="p-l-5" style={{ display: "inline-block", marginLeft: "2px", verticalAlign: "bottom", fontSize: "16px" }}>
-            {/* <GenericYearDropDown handleChangePeriod={handleOrgUnitChange} /> */}
-            Year: <Years /><br />
-            Month: <Months />
+          <div style={{ display: "inline-block" }} className="is-pulled-right">
+            <YearsDropDown></YearsDropDown>
           </div>
-
+          
         </div>
 
         <div className="container is-centered p-5 m-b-10">
