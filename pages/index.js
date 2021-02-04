@@ -29,12 +29,22 @@ const Page = (props) => {
 
   const [orgUnit, setOrgUnit] = useState(18);
   const [period, setPeriod] = useState(2019);
-  const [orgFilterId, setOrgFilterId] = useState(20);
+  const [parentOrgId, setParentOrgId] = useState(null);
 
-
-  let handleOrgUnitChange = (orgUnitId) => {
-    console.log("setting org unit");
+  let handleCountyUnitChange = (orgUnitId) => {
     setOrgUnit(orgUnitId);
+    console.log(orgUnitId);
+  }
+
+  let updateCountyIdHandler= (orgUnitId) => {
+  }
+
+  let handleSubCountyUnitChange = (orgUnitId) => {
+    setOrgUnit(orgUnitId);
+  }
+
+  let handlePeriodChange = (periodId) => {
+    setPeriod(periodId);
   }
 
   return <div>
@@ -43,13 +53,13 @@ const Page = (props) => {
         {/* Data labels */}
         <div className="container">
           <div style={{ display: "inline-block" }} className="m-r-5">
-            <Counties></Counties>
+            <Counties callBackHandler={handleCountyUnitChange} updateCountyIdHandler={updateCountyIdHandler}></Counties>
           </div>
           <div style={{ display: "inline-block" }}>
-            <SubCounties></SubCounties>
+            <SubCounties callBackHandler={handleSubCountyUnitChange}></SubCounties>
           </div>
           <div style={{ display: "inline-block" }} className="is-pulled-right">
-            <YearsDropDown></YearsDropDown>
+            <YearsDropDown handlePeriodChange={handlePeriodChange}></YearsDropDown>
           </div>
           
         </div>

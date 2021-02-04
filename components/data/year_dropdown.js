@@ -16,7 +16,7 @@ export default class YearsDropDown extends React.Component {
     }
 
     componentDidMount() {
-        //fetch counties
+        //fetch counties handlePeriodChange
         let years = [];
         let max = new Date().getFullYear()
         let min = max - 11
@@ -30,7 +30,9 @@ export default class YearsDropDown extends React.Component {
         console.log(years);
     }
 
-    filterDisplayCountyList
+
+    
+
 
     render() {
         return (
@@ -43,6 +45,7 @@ export default class YearsDropDown extends React.Component {
                     this.setState({
                         selectedVal: newValue
                     });
+                    this.props.handlePeriodChange(newValue.title);
                 }}
                 options={this.state.years}
                 getOptionLabel={(option) => option.title}
