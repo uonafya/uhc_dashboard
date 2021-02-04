@@ -31,9 +31,9 @@ const Header = () => (
               <div class="navbar-item">
                 <div class="field is-grouped">
                     <Link href='/'><a className="m-r-5 button is-secondary is-dark"><strong>Service Delivery</strong></a></Link>
-                    <Link href='#'><a className="m-r-5 button is-secondary is-dark"><strong>Health Statistics</strong></a></Link>
-                    <Link href='#'><a className="m-r-5 button is-secondary is-dark"><strong>Commodities</strong></a></Link>
-                    <Link href='#'><a className="m-r-5 button is-secondary is-dark"><strong>Human Resource</strong></a></Link>
+                    <Link href='/health_stat'><a className="m-r-5 button is-secondary is-dark"><strong>Health Statistics</strong></a></Link>
+                    <Link href='/commodity'><a className="m-r-5 button is-secondary is-dark"><strong>Commodities</strong></a></Link>
+                    <Link href='/human_resource'><a className="m-r-5 button is-secondary is-dark"><strong>Human Resource</strong></a></Link>
                     <Link href='#'><a className="m-r-5 button is-secondary is-dark"><strong>Community Access</strong></a></Link>
                     <Link href='/uhc'><a className="m-r-5 button is-secondary is-dark"><strong>Result Framework</strong></a></Link>
                 </div>

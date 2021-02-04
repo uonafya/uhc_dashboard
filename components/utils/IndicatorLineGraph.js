@@ -19,7 +19,7 @@ export default class IndicatorLineGraph extends PureComponent {
     super(props);
     this.state = {
       chartOptions: {
-        period: 2019,
+        period: 2020,
         ouid: 18,
         countyList: [],
         id: this.props.id,
