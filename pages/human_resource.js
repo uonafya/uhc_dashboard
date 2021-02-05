@@ -33,7 +33,7 @@ const Page = (props) => {
 
   let handleCountyUnitChange = (orgUnitId) => {
     setOrgUnit(orgUnitId);
-    console.log(orgUnitId);
+    setParentOrgId(orgUnitId)
   }
 
   let updateCountyIdHandler= (orgUnitId) => {

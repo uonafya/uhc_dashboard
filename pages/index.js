@@ -33,7 +33,7 @@ const Page = (props) => {
 
   let handleCountyUnitChange = (orgUnitId) => {
     setOrgUnit(orgUnitId);
-    console.log(orgUnitId);
+    setParentOrgId(orgUnitId)
   }
 
   let updateCountyIdHandler= (orgUnitId) => {
@@ -56,7 +56,7 @@ const Page = (props) => {
             <Counties callBackHandler={handleCountyUnitChange} updateCountyIdHandler={updateCountyIdHandler}></Counties>
           </div>
           <div style={{ display: "inline-block" }}>
-            <SubCounties callBackHandler={handleSubCountyUnitChange}></SubCounties>
+            <SubCounties callBackHandler={handleSubCountyUnitChange} parentOrgId={parentOrgId}></SubCounties>
           </div>
           <div style={{ display: "inline-block" }} className="is-pulled-right">
             <YearsDropDown handlePeriodChange={handlePeriodChange}></YearsDropDown>

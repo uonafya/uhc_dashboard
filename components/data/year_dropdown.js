@@ -9,7 +9,7 @@ export default class YearsDropDown extends React.Component {
         super();
         this.state = {
             showModal: false,
-            currenTperiod: new Date().getFullYear() - 1,
+            selectedVal: new Date().getFullYear() - 1,
             years: [],
         };
 
