@@ -21,18 +21,18 @@ const resilienceInServices=[];
 cadreDistribution.push(<CadreGroupPieChart  selfContained={true} title={"Distribution of facility human resource by Cadre grouping"}/>);
 cadreDistribution.push(<CadreCountTable  selfContained={true}/>);
 
-serviceKHISCoverageIndicators.push(<IndicatorLineGraph type={'column'} label={"Region"} id={9986029} pe={2019} ouid={18} selfContained={true}/>);
-serviceKHISCoverageIndicators.push(<IndicatorLineGraph type={'column'} label={"Region"} id={342134} pe={2019} ouid={18} selfContained={true}/>);
-serviceKHISCoverageIndicators.push(<IndicatorLineGraph type={'column'} label={"Region"} id={31584} pe={2019} ouid={18} selfContained={true}/>);
-serviceKHISCoverageIndicators.push(<IndicatorLineGraph type={'column'} label={"Region"} id={10748234} pe={2019} ouid={18} selfContained={true}/>);
+serviceKHISCoverageIndicators.push(<IndicatorLineGraph type={'column'} label={"Region"} id={9986029} pe={2020} ouid={18} selfContained={true}/>);
+serviceKHISCoverageIndicators.push(<IndicatorLineGraph type={'column'} label={"Region"} id={342134} pe={2020} ouid={18} selfContained={true}/>);
+serviceKHISCoverageIndicators.push(<IndicatorLineGraph type={'column'} label={"Region"} id={31584} pe={2020} ouid={18} selfContained={true}/>);
+serviceKHISCoverageIndicators.push(<IndicatorLineGraph type={'column'} label={"Region"} id={10748234} pe={2020} ouid={18} selfContained={true}/>);
 
-qualityOfEssentialServices.push(<IndicatorLineGraph type={'column'} label={"Region"} id={85000} pe={2019} ouid={18} selfContained={true}/>);
-qualityOfEssentialServices.push(<IndicatorLineGraph type={'column'} label={"Region"} id={31584} pe={2019} ouid={18} selfContained={true}/>);
+qualityOfEssentialServices.push(<IndicatorLineGraph type={'column'} label={"Region"} id={85000} pe={2020} ouid={18} selfContained={true}/>);
+qualityOfEssentialServices.push(<IndicatorLineGraph type={'column'} label={"Region"} id={31584} pe={2020} ouid={18} selfContained={true}/>);
 
-demandForEssentialServices.push(<IndicatorLineGraph type={'column'} label={"Region"} id={33682} pe={2019} ouid={18} selfContained={true}/>);
-demandForEssentialServices.push(<IndicatorLineGraph type={'column'} label={"Region"} id={32146} pe={2019} ouid={18} selfContained={true}/>);
+demandForEssentialServices.push(<IndicatorLineGraph type={'column'} label={"Region"} id={33682} pe={2020} ouid={18} selfContained={true}/>);
+demandForEssentialServices.push(<IndicatorLineGraph type={'column'} label={"Region"} id={32146} pe={2020} ouid={18} selfContained={true}/>);
 
-resilienceInServices.push(<IndicatorLineGraph type={'column'} label={"Region"} id={96871} pe={2019} ouid={18} selfContained={true}/>);
+resilienceInServices.push(<IndicatorLineGraph type={'column'} label={"Region"} id={96871} pe={2020} ouid={18} selfContained={true}/>);
 
 
 
