@@ -61,7 +61,7 @@ const Page = (props) => {
           <div style={{ display: "inline-block" }} className="is-pulled-right">
             <YearsDropDown handlePeriodChange={handlePeriodChange}></YearsDropDown>
           </div>
-          
+
         </div>
 
         <div className="container is-fluid">
@@ -74,7 +74,7 @@ const Page = (props) => {
             <div class="column ">
                 <IndicatorLineGraph id={31584} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} chartType={ChartType.column}/>
             </div>
-            
+
           </div>
 
           <div className="columns has-same-height is-gapless">
@@ -86,8 +86,33 @@ const Page = (props) => {
             <div class="column ">
                 <IndicatorLineGraph id={342134} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} chartType={ChartType.column}/>
             </div>
-            
+
           </div>
+
+          <div className="columns has-same-height is-gapless">
+            {/* <UhcIndicators /> */}
+
+            <div class="column ">
+                <IndicatorLineGraph id={10773795} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+            </div>
+            <div class="column ">
+              <IndicatorLineGraph id={71105411} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+            </div>
+
+          </div>
+
+          <div className="columns has-same-height is-gapless">
+            {/* <UhcIndicators /> */}
+
+            <div class="column ">
+                <IndicatorLineGraph id={278161} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+            </div>
+            <div class="column ">
+            </div>
+
+          </div>
+
+
         </div>
       </section>
 

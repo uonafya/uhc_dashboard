@@ -61,7 +61,7 @@ const Page = (props) => {
           <div style={{ display: "inline-block" }} className="is-pulled-right">
             <YearsDropDown handlePeriodChange={handlePeriodChange}></YearsDropDown>
           </div>
-          
+
         </div>
 
         <div className="container is-centered p-5 m-b-10">
@@ -71,7 +71,7 @@ const Page = (props) => {
           <DataLabel name={"Healthy Life Expectancy"} value={58.9}></DataLabel>
           <DataLabel name={"NCDs Mortality Rate"} value={55}></DataLabel>
           <DataLabel name={"TB Mortality rate"} value={38}></DataLabel>
-          
+
         </div>
 
         <div className="container is-fluid">
@@ -85,7 +85,7 @@ const Page = (props) => {
             <div class="column ">
                 <IndicatorLineGraph id={10748234} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
             </div>
-            
+
           </div>
 
           <div className="columns has-same-height is-gapless">
@@ -97,12 +97,34 @@ const Page = (props) => {
             <div class="column ">
                 <IndicatorLineGraph id={10699276} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} chartType={ChartType.column}/>
             </div>
-            
+
           </div>
 
           <div className="columns has-same-height is-gapless">
-            <LandingCadrePieChart />
+            {/* <UhcIndicators /> */}
+
+            <div class="column ">
+                <IndicatorLineGraph id={10748503} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+            </div>
+            <div class="column ">
+              <IndicatorLineGraph id={61605597} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+            </div>
+
           </div>
+
+
+          <div className="columns has-same-height is-gapless">
+            {/* <UhcIndicators /> */}
+
+            <div class="column ">
+                <IndicatorLineGraph id={49684254} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+            </div>
+            <div class="column ">
+              <IndicatorLineGraph id={49684028} pe={period} ouid={orgUnit} selfContained={true} removePeriodFilter={true} removeOrgFilter={true} />
+            </div>
+
+          </div>
+
         </div>
       </section>
 
